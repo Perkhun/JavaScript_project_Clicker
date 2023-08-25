@@ -1,19 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <audio
+      id="background-music"
+      src="../music/Sunny Fruit - Beat Blitz.mp3"
+      loop
+    ></audio>
+
     <title>Clicker Game</title>
-</head>
-<body>
-    <div class="game-container">
-        <button id="click-button">Click me!</button>
-        <p id="score">Score: 0</p>
-        <p id="time-left">Time left: </p>
-        <button id="start-button">START</button>
-        <button id="restart-button">RESTART</button>
+  </head>
+  <body>
+    <div class="body-content">
+      <div class="border">
+        <a class="start-button" href="main-page/main_page.html">START</a>
+      </div>
+
+      <p>
+        Do you want to hear music? <br />
+        - Please, click on the screen :)
+      </p>
     </div>
-    <script src="app.js"></script>
-</body>
+
+    <script>
+      const backgroundMusic = document.querySelector("#background-music");
+      document.addEventListener("DOMContentLoaded", function () {
+        document.addEventListener("click", function () {
+          backgroundMusic.play();
+        });
+      });
+    </script>
+  </body>
 </html>

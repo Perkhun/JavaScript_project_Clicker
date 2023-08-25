@@ -1,28 +1,38 @@
-/* styles.css */
-.game-container {
-    text-align: center;
-    margin-top: 100px;
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-button {
-    padding: 10px 20px;
-    margin: 10px;
-    font-size: 16px;
-    cursor: pointer;
+.body-content {
+  background-image: url(images/background.gif);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-#click-button {
-    background-color: #3498db;
-    color: white;
-    border: none;
+.border {
+  display: flex;
+  justify-content: center;
+  border: 5px double black;
 }
 
-#upgrade-button {
-    background-color: #2ecc71;
-    color: white;
-    border: none;
+.start-button {
+  text-decoration: none;
+  font-size: 50px;
+  font-weight: 700;
+  margin: 15px;
+  color: rgba(13, 37, 73, 0.9);
 }
-
 p {
-    font-size: 18px;
+  margin-top: 30px;
+  font-weight: 500;
+  font-size: larger;
 }

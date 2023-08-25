@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  background-image: url(../images/doughnutBg.jpg);
+  background-size: cover;
+  height: 100vh;
+  background-size: 800px 800px; /* Розмір ширина x висота */
+  background-position: center;
+  overflow: hidden;
+}
+.game-container {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#score,
+#time-left {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+select {
+  background-color: #f549b0;
+  color: #100f0f;
+  width: 120px;
+  height: 40px;
+  border-radius: 20px;
+  font-size: 15px;
+  font-weight: 600;
+  border: 2px solid rgb(88, 73, 73);
+}
+#restart-button,
+#start-button {
+  padding: 10px 20px;
+  margin: 10px;
+  width: 150px;
+  font-size: 16px;
+  cursor: pointer;
+  color: rgb(207, 4, 143);
+  text-shadow: 1px 1px 2px black;
+  border: 3px solid rgb(207, 4, 143);
+}
+
+#restart-button,
+#start-button:hover {
+  font-size: 20px;
+}
+
+#click-button {
+  background-color: #f549b0;
+  height: 100px;
+  width: 100px;
+  margin-bottom: 20px;
+  color: white;
+  border-radius: 50%;
+  font-size: 16px;
+  cursor: pointer;
+  border: 3px solid rgb(207, 4, 143);
+  box-shadow: 5px 5px 5px #fc9cf2;
+}
+
+#click-button:hover {
+  font-size: 20px;
+}
+
+p {
+  font-size: 18px;
+}
+
+#result {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 300px;
+  width: 300px;
+  margin: auto;
+  margin-top: 30px;
+  border-radius: 10px;
+  border: 2px solid rgb(239, 8, 239);
+  background-image: url(../images/resultDoughnut.gif);
+  background-size: 300px 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: none;
+}
+
+#result-text {
+  margin-top: auto;
+}
